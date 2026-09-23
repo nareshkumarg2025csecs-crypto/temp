@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assessment Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffdbd1",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#6c5000",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdf9e",
+                        "inverse-primary": "#ffb5a0",
+                        "outline": "#907067",
+                        "on-primary-container": "#541200",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "secondary": "#785900",
+                        "on-surface-variant": "#5b4039",
+                        "primary": "#b02f00",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#e4beb4",
+                        "primary-container": "#ff5722",
+                        "secondary-container": "#fdc003",
+                        "inverse-surface": "#303030",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-container": "#41a091",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-fixed-variant": "#005047",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-variant": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#fabd00",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#862200",
+                        "on-tertiary-container": "#00302a",
+                        "surface-tint": "#b02f00",
+                        "tertiary-fixed-dim": "#7ad7c6",
+                        "primary-fixed-dim": "#ffb5a0",
+                        "tertiary": "#006b5e",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary-fixed": "#3b0900",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-fixed": "#00201b",
+                        "tertiary-fixed": "#97f3e2",
+                        "on-surface": "#1b1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "touch-target-min": "3rem",
+                        "margin-edge": "2rem",
+                        "stack-md": "1rem",
+                        "stack-sm": "0.5rem",
+                        "gutter-default": "1.5rem",
+                        "stack-lg": "2rem"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Hanken Grotesk"],
+                        "label-bold": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col md:hidden">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 full-width border-b-2 border-outline-variant flat no shadows flex justify-between items-center h-16 px-margin-edge w-full z-40">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A close up portrait of an industrial worker wearing a high visibility vest and hard hat, looking determined. Bright, modern lighting, clear background, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYOyRo75p0GVcUSrFVkVQyCzg9xOPVzqaliAhsMnzS2Pc9o6G7RSn7q0pIpHKXnKb0LVsR73kFtWEfnrWzXqRGBjI3x-12lLBhfd-ctkH5Zgrm_bZSa4s8jaC14rDYJAYtZQMFpN1EVZKyyhMXPlJaD-7bgj6OaM37PuS9KSGJtsLj8Z12riQtmmRUzn5LKcVklZ1UIspCLKxtBtfruNI-rTNJYrJezKUsd7oFX3tbO1ksK918tgKP"/>
+</div>
+<span class="font-headline-lg-mobile text-primary tracking-tighter uppercase text-headline-lg-mobile font-headline-lg-mobile">KHOLAN</span>
+</div>
+<button class="text-primary hover:bg-surface-container-high p-2 rounded-full transition-transform duration-100 hover:scale-95 flex items-center justify-center min-w-[48px] min-h-[48px]">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 p-margin-edge pb-32 flex flex-col gap-stack-lg">
+<!-- Progress Indicator -->
+<div class="flex items-center justify-between w-full gap-2">
+<div class="h-2 flex-1 rounded-full bg-primary-container"></div>
+<div class="h-2 flex-1 rounded-full bg-primary-container"></div>
+<div class="h-2 flex-1 rounded-full bg-primary-container"></div>
+<div class="h-2 flex-1 rounded-full bg-surface-variant"></div>
+<div class="h-2 flex-1 rounded-full bg-surface-variant"></div>
+</div>
+<!-- Question -->
+<div class="space-y-stack-sm">
+<span class="text-label-bold font-label-bold text-on-surface-variant uppercase tracking-wider">Question 3 of 5</span>
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface">Which helmet is safe for mining?</h1>
+</div>
+<!-- Options (Active State) -->
+<div class="flex flex-col gap-stack-md" id="quiz-options">
+<!-- Option A (Incorrect Selection Example) -->
+<button class="relative w-full rounded-xl border-2 border-error bg-error-container overflow-hidden min-h-[48px] flex flex-col text-left transition-transform active:scale-[0.98]">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A bright yellow construction hard hat sitting on a clean, light surface. The image is brightly lit with a soft studio light, highlighting the smooth plastic texture of the helmet. The background is slightly blurred to focus on the object." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9N7blUj6Hzjkr-NTFqkbhdDe949liGYF0pfIquiqAE6KFGGKiTw_bWDaxRL4FDrsCyt5wR6VC53ghYZEA2_CnUyfgEix3JyrpJkkIesIPLDvKAGtyN6mLV-WO7LyvWVbFtByjakNAwJrx0rzE2dfDmCqQCel_AjVXds0ZrUk4wrpfSOVPCXOM6W-kCJ-WYj2ro-Lv7Fz6ARtklaoi6S-mT7SnqEo5LDFvkxSelo4lqU5pRO2acgKV"/>
+<div class="absolute inset-0 bg-error/10"></div>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-container-lowest">
+<span class="text-body-lg font-body-lg text-on-surface">Standard Hard Hat</span>
+<div class="w-8 h-8 rounded-full bg-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-error icon-fill" data-icon="close">close</span>
+</div>
+</div>
+</button>
+<!-- Option B -->
+<button class="relative w-full rounded-xl border-2 border-surface-variant bg-surface-container-lowest overflow-hidden min-h-[48px] flex flex-col text-left transition-transform active:scale-[0.98] opacity-60">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A white safety helmet with an attached face shield and ear muffs, designed for forestry or heavy machinery operation. High contrast lighting against a stark, light background, emphasizing the industrial grade materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkrcjowfsuhX0Qpi9qR-ZaDAkFMp-keJZR59ryyZdBFgxxNlTJ_15Ki2vlsjv3ebhBEYCkYHlTfd1WczIghIMYbSP_9h146Fn0XHsrs2h3gvOCmQ7O7NDH2LplwmCiKMbms2yk9aWRU82u3kzzorR_ziRyiOkB5T97YcOwF87YILoFRsflPIfSdYd2BeBZMt8Nq3kq8rWL09UauhDcA_Bsv_cGfLqeTdUSPpNqBzKYUUY0zw7fYDUB"/>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-container-lowest">
+<span class="text-body-lg font-body-lg text-on-surface">Forestry Helmet</span>
+</div>
+</button>
+<!-- Option C (Correct Answer indication, not selected by user in this scenario) -->
+<button class="relative w-full rounded-xl border-2 border-tertiary-container bg-surface-container-lowest overflow-hidden min-h-[48px] flex flex-col text-left opacity-60">
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A rugged, dark orange mining helmet equipped with a bright LED headlamp securely mounted on the front. The image is taken in a professional studio setting with soft fill lights to show the tough texture and safety ratings printed on the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6qTsBdG0OyfQyqT3rrBB1FBoPYWpDzBZWGk9qnpHJhwja9qZ3vX2VgKE2TLiCFdywpOX__8E9TUobV47hMzMqOn-21ulkJ7mP3XlwBFjI-3Hkwbs6iZca5HYD20v_RSKr_EZHjVb6KqUUQJd4n6r5Hw2hNVS4cIeJ6A-0hJT1fhZ41Ijttp5uMb_TNYMjq6fc042cC-nbUj9btiQRdzqga3MDXInNYIz12cgu805pylsbMd9PZT5h"/>
+</div>
+<div class="p-4 flex items-center justify-between bg-surface-container-lowest">
+<span class="text-body-lg font-body-lg text-on-surface">Mining Helmet w/ Lamp</span>
+<div class="w-8 h-8 rounded-full border-2 border-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="check">check</span>
+</div>
+</div>
+</button>
+</div>
+<!-- Retry State Card (Visible after incorrect selection) -->
+<div class="mt-auto pt-stack-lg">
+<div class="bg-secondary-fixed rounded-xl p-6 border-l-4 border-secondary-container shadow-sm flex flex-col gap-stack-md relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-white/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-4 z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container icon-fill text-[32px]" data-icon="warning">warning</span>
+</div>
+<div>
+<h3 class="text-body-lg font-body-lg text-on-secondary-fixed-variant font-bold">Let's try again!</h3>
+<p class="text-body-md font-body-md text-on-secondary-fixed-variant mt-1">Mining environments require hands-free illumination and reinforced top protection. You can do it.</p>
+</div>
+</div>
+<div class="flex gap-4 mt-2 z-10">
+<button class="flex-1 bg-surface-container-lowest border-2 border-secondary-container text-on-secondary-container text-label-bold font-label-bold py-3 px-6 rounded-full text-center transition-colors active:bg-secondary-fixed-dim min-h-[48px] flex items-center justify-center uppercase tracking-wide">
+                        Review Lesson
+                    </button>
+<button class="flex-1 bg-primary-container text-white text-label-bold font-label-bold py-3 px-6 rounded-full text-center transition-colors active:bg-primary min-h-[48px] flex items-center justify-center uppercase tracking-wide shadow-md">
+                        Retry
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Navigation Suppressed intentionally for Assessment flow -->
+</body></html>

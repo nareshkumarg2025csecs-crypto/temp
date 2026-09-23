@@ -1,0 +1,5 @@
+D:/SIH/sample/UnityExport/unityLibrary/.cxx/Debug/2f522c4t/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/SIH/sample/UnityExport/unityLibrary/.cxx/Debug/2f522c4t/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/SIH/sample/UnityExport/unityLibrary/.cxx/Debug/2f522c4t/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+D:/SIH/sample/UnityExport/unityLibrary/.cxx/Debug/2f522c4t/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+D:/SIH/sample/UnityExport/unityLibrary/.cxx/Debug/2f522c4t/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir

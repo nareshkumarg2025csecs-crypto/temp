@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Score &amp; Certificate - Kholan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffdbd1",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#6c5000",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdf9e",
+                        "inverse-primary": "#ffb5a0",
+                        "outline": "#907067",
+                        "on-primary-container": "#541200",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "secondary": "#785900",
+                        "on-surface-variant": "#5b4039",
+                        "primary": "#b02f00",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#e4beb4",
+                        "primary-container": "#ff5722",
+                        "secondary-container": "#fdc003",
+                        "inverse-surface": "#303030",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-container": "#41a091",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-fixed-variant": "#005047",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-variant": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#fabd00",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#862200",
+                        "on-tertiary-container": "#00302a",
+                        "surface-tint": "#b02f00",
+                        "tertiary-fixed-dim": "#7ad7c6",
+                        "primary-fixed-dim": "#ffb5a0",
+                        "tertiary": "#006b5e",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary-fixed": "#3b0900",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-fixed": "#00201b",
+                        "tertiary-fixed": "#97f3e2",
+                        "on-surface": "#1b1c1c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "touch-target-min": "3rem",
+                        "margin-edge": "2rem",
+                        "stack-md": "1rem",
+                        "stack-sm": "0.5rem",
+                        "gutter-default": "1.5rem",
+                        "stack-lg": "2rem"
+                    },
+                    fontFamily: {
+                        "headline-xl": ["Hanken Grotesk"],
+                        "label-bold": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background-color: #ff5722;
+            top: -20px;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-highest flex justify-between items-center h-16 px-margin-edge w-full full-width top-0 sticky border-b-2 border-outline-variant dark:border-outline flat no shadows z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A professional close-up headshot of an industrial worker wearing safety gear, clean background, bright lighting, high-contrast, modern protective aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLp15yyKD2BOr2n-vzaXViFFND56C-d0_FZH533J424iVrUkeTUd0sflKUjL1WpJcpoSw5HayH7yFER0nd7mtxHEPCr4CPlD1oaQLQC3AeAjRazVGKwIlrrQWjd26a8liSt5Bb2CmlUVQJoh12ds4gHm53EeB9pRQM6942JzNiA7F0v7ei80EfUUFoTvMmLWxhQ6FxG-VcShCs9juYZfjHDrXEmIL6X2TgFO26ciPL0M7z-BQVix3u"/>
+</div>
+<span class="font-headline-lg-mobile text-primary tracking-tighter uppercase font-bold">KHOLAN</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-container-high text-primary dark:text-primary-container Active: scale-95 transition-transform duration-100">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow p-margin-edge flex flex-col gap-stack-lg max-w-3xl mx-auto w-full pb-32">
+<!-- Toggle View (For Demo Purposes) -->
+<div class="flex justify-center gap-4 mb-stack-md">
+<button class="px-6 py-3 rounded-full border-2 border-primary-container text-label-bold font-label-bold text-primary" onclick="document.getElementById('pass-state').classList.remove('hidden'); document.getElementById('fail-state').classList.add('hidden'); createConfetti();">Show Pass State</button>
+<button class="px-6 py-3 rounded-full border-2 border-outline text-label-bold font-label-bold text-on-surface-variant" onclick="document.getElementById('pass-state').classList.add('hidden'); document.getElementById('fail-state').classList.remove('hidden'); stopConfetti();">Show Fail State</button>
+</div>
+<!-- Pass State -->
+<div class="flex flex-col items-center text-center gap-stack-lg relative w-full" id="pass-state">
+<div class="absolute inset-0 overflow-hidden pointer-events-none z-0" id="confetti-container"></div>
+<div class="z-10 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-[0_8px_24px_rgba(27,28,28,0.1)] w-full max-w-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-tertiary-container"></div>
+<div class="flex flex-col items-center gap-stack-md">
+<div class="w-20 h-20 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-stack-sm">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="verified" data-weight="fill">verified</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">Passed!</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Outstanding job validating safety protocols.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant flex flex-col items-center gap-stack-md">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-wider">Certificate of Completion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Awarded to</p>
+<p class="font-headline-lg text-headline-lg text-primary">Sunil M.</p>
+<div class="bg-surface-container-high px-6 py-3 rounded-lg w-full text-center my-stack-sm border border-outline-variant">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest text-xs">Module</p>
+<p class="font-body-lg text-body-lg text-on-surface font-bold">PPE Mastery</p>
+</div>
+<div class="flex justify-between w-full items-end mt-stack-md">
+<div class="text-left">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest text-xs">Date Completed</p>
+<p class="font-body-md text-body-md text-on-surface">25 Aug 2026</p>
+</div>
+<div class="w-16 h-16 bg-surface-container-high rounded border border-outline-variant flex items-center justify-center p-1">
+<img class="w-full h-full object-cover rounded-sm" data-alt="A clean, minimalist high-contrast black and white QR code designed for an industrial safety certificate, sharp edges, modern tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAsp4MFzTnQR5bHLxQOu4dJh8x6-TJ0SYpMCXj9YQV8svNj-hiuZVAPByEVqnzRZ-JGc2X8tE7n5RB8Tp3lXboquG49H1mUNIYvxDCe6rA_rEVd3sivsgEzbPaVSiVW-jDijREjKF80QqGPgcLUC3wUcc9HB2nfSxB7pSUuxJHRGadkEPoGPP-u2slj_7Iyx0o6H6E_CcIbjiX3NpivNnn7V4Ot5l2-OInbzH9srU-W6QKRuPK7jFU"/>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full max-w-lg z-10">
+<button class="flex-1 bg-primary-container text-on-primary font-label-bold text-label-bold py-4 rounded-full min-h-[48px] flex items-center justify-center gap-2 hover:bg-primary active:bg-on-primary-fixed-variant transition-colors shadow-md">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                    Download Certificate
+                </button>
+<button class="flex-1 bg-surface-container-high border-2 border-primary-container text-primary font-label-bold text-label-bold py-4 rounded-full min-h-[48px] flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+                    Share
+                </button>
+</div>
+</div>
+<!-- Fail State (Hidden by default) -->
+<div class="hidden flex flex-col items-center text-center gap-stack-lg w-full" id="fail-state">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-md w-full max-w-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-secondary-container"></div>
+<div class="flex flex-col items-center gap-stack-md">
+<div class="w-20 h-20 bg-secondary-container/20 rounded-full flex items-center justify-center mb-stack-sm">
+<span class="material-symbols-outlined text-5xl text-secondary" data-icon="rotate_right" data-weight="fill">rotate_right</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Not Quite.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nearly there! Let's brush up on PPE basics to ensure absolute safety.</p>
+</div>
+<div class="mt-8 flex flex-col gap-4">
+<div class="bg-surface-container-high p-4 rounded-lg border-l-4 border-error flex items-start gap-3">
+<span class="material-symbols-outlined text-error mt-1" data-icon="warning">warning</span>
+<div class="text-left">
+<p class="font-label-bold text-label-bold text-on-surface">Missed: Respirator Fitting</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Review the sequence for achieving a proper seal.</p>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full max-w-lg bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-4 rounded-full min-h-[48px] flex items-center justify-center gap-2 hover:bg-secondary hover:text-on-secondary active:scale-95 transition-all shadow-md mt-stack-md">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+                Start Over
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 h-20 pb-safe bg-surface border-t-4 border-primary-container dark:border-primary shadow-lg z-50 rounded-t-xl md:hidden">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:bg-surface-container-highest transition-colors min-w-[72px]">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="text-label-bold font-label-bold">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl min-w-[72px] py-1 Active: scale-90 transition-all duration-150">
+<span class="material-symbols-outlined mb-1" data-icon="verified" data-weight="fill">verified</span>
+<span class="text-label-bold font-label-bold">Certificates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:bg-surface-container-highest transition-colors min-w-[72px]">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="text-label-bold font-label-bold">Progress</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-2 hover:bg-surface-container-highest transition-colors min-w-[72px]">
+<span class="material-symbols-outlined mb-1" data-icon="account_circle">account_circle</span>
+<span class="text-label-bold font-label-bold">Profile</span>
+</button>
+</nav>
+<script>
+        let confettiInterval;
+        
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            container.innerHTML = ''; // Clear previous
+            
+            const colors = ['#ff5722', '#fdc003', '#41a091', '#b02f00'];
+            
+            confettiInterval = setInterval(() => {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti-piece');
+                
+                // Randomize properties
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                
+                container.appendChild(confetti);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }, 100);
+        }
+
+        function stopConfetti() {
+            clearInterval(confettiInterval);
+            document.getElementById('confetti-container').innerHTML = '';
+        }
+
+        // Start confetti on load for the default pass state
+        createConfetti();
+    </script>
+</body></html>

@@ -1,0 +1,2 @@
+D:\SIH\sample\UnityExport\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\SIH\sample\UnityExport\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
